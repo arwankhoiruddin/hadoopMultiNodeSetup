@@ -167,3 +167,40 @@ hadoop2
   </property>
 </configuration>
 ```
+
+## Copy `core-site` and `hdfs-site` to all nodes
+
+```
+scp core-site.xml hadoop2:/usr/local/hadoop/etc/hadoop/
+scp hdfs-site.xml hadoop2:/usr/local/hadoop/etc/hadoop/
+```
+
+# Start Hadoop in master
+
+## Format HDFS
+
+```
+hdfs namenode -format
+```
+
+## Start all daemons
+
+```
+start-all.sh
+```
+
+## Check if all services are running
+
+```
+jps
+```
+If all works, you will find these output
+
+```
+15523 NameNode
+16164 ResourceManager
+15687 DataNode
+15943 SecondaryNameNode
+16653 Jps
+16318 NodeManager
+```
