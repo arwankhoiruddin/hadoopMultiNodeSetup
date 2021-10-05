@@ -1,3 +1,7 @@
+# Introduction
+
+These steps are tested for the `ubuntu 18.04` and `hadoop-3.1.1`
+
 # Do these steps on all nodes
 
 ## Install JDK and Hadoop
