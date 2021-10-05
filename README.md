@@ -39,36 +39,6 @@ PATH="/usr/local/hadoop/bin:/usr/local/hadoop/sbin:/usr/local/sbin:/usr/local/bi
 JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
 ```
 
-# Start Hadoop in master
-
-## Format HDFS
-
-```
-hdfs namenode -format
-```
-
-## Start all daemons
-
-```
-start-all.sh
-```
-
-## Check if all services are running
-
-```
-jps
-```
-If all works, you will find these output
-
-```
-15523 NameNode
-16164 ResourceManager
-15687 DataNode
-15943 SecondaryNameNode
-16653 Jps
-16318 NodeManager
-```
-
 ## Add hadoop user
 
 ```
