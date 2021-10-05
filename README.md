@@ -64,6 +64,19 @@ sudo service ssh restart
 
 # Do these for Master only
 
+## Map the IP address of all nodes to name
+
+```
+nano /etc/hosts
+```
+
+Say, the master is at 192.38.33.2 and slave is at 192.38.33.3. In `hosts`, we put like this
+
+```
+192.38.33.2  hadoop1
+192.38.33.3  hadoop2
+```
+
 ## Login as hadoop user
 
 ```
